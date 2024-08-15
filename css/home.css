@@ -1,0 +1,297 @@
+/* General style rules */
+h1,
+h2,
+h3 {
+  font-family: var(--nike-futura);
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 51.32px;
+}
+
+p {
+  font-family: var(--helvetica);
+}
+
+/* Header section */
+#header {
+  padding: 43px 17px 164px;
+  background: url('../assets/images/goal-background.gif') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header__logo-and-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.header__logo-and-nav--logo img {
+  width: 80px;
+}
+
+.header__logo-and-nav--nav-section {
+  border-radius: 35px;
+  background: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 8px 12.5px;
+}
+
+.header__logo-and-nav--nav-section img {
+  height: 38px;
+}
+
+.header__logo-and-nav--nav-section p {
+  font-size: 18px;
+}
+
+/* Hero section */
+.hero-section {
+  /* position: relative; */
+}
+
+.hero-section h1 {
+  max-width: 1086px;
+  color: var(--white);
+  font-size: 4.5rem;
+  line-height: 1.283;
+  font-weight: 800;
+}
+
+.hero-section h1 .changed-text {
+  color: var(--orange);
+  display: inline;
+}
+
+.orange-text {
+  color: var(--orange);
+}
+
+.remove-text {
+  display: none;
+}
+
+.audio-container {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--grey-1);
+  position: fixed;
+  right: 1.3rem;
+  bottom: 1.5rem;
+  z-index: 10;
+}
+
+.hero-section__image-container {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  width: 100%;
+}
+
+.hero-section__image-container--video {
+  width: 333.33px;
+  height: 100%;
+  background: url('../assets/images/television.png') no-repeat;
+  background-size: cover;
+  padding: 1.5rem 0rem 2.8rem 1.4rem;
+}
+
+.hero-section__image-container--video img {
+  width: 239.5px;
+  border-radius: 17px;
+}
+
+/* How it works section */
+#how-it-works {
+  padding: 177px 25px 37px;
+}
+
+.how-it-works-container {
+  max-width: 866px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.how-it-works-container h2 {
+  color: var(--orange-dark);
+  margin-bottom: 46px;
+}
+
+.how-it-works-container__steps-section ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px 16px;
+  justify-content: space-between;
+}
+
+.how-it-works-container__steps-section li {
+  max-width: 172px;
+}
+
+.how-it-works-container__steps-section li h3 {
+  font-size: 24px;
+  line-height: 30.79px;
+  font-weight: 800;
+  color: var(--orange);
+}
+
+.how-it-works-container__steps-section li img {
+  width: 120px;
+}
+
+.how-it-works-container__steps-section .step-3 p {
+  max-width: 174px;
+  text-align: left;
+}
+
+/* footer section */
+#footer {
+  background: var(--blue);
+  text-align: center;
+  color: var(--white);
+  padding: 56px 25px 40px;
+}
+
+.message-from-founder-section h2 {
+  max-width: 551px;
+  color: var(--orange);
+  margin: 0 auto;
+}
+
+.message-from-founder-section p {
+  font-family: 'Bad Script';
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 43.36px;
+  max-width: 454px;
+  margin: 27px auto 84px;
+}
+
+/* Medium screens */
+@media (min-width: 430px) {
+  .hero-section h1 {
+    font-size: 5.625rem;
+  }
+
+  /* How it works section */
+  #how-it-works {
+    padding: 177px 49px 37px;
+  }
+
+  .how-it-works-container__steps-section li img {
+    width: 140px;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+  /* General style rules */
+  h2 {
+    font-size: 64px;
+    line-height: 82.11px;
+  }
+
+  /* Header section  */
+  #header {
+    padding: 36px 71px 78px;
+  }
+
+  .header__logo-and-nav--logo img {
+    width: unset;
+  }
+
+  .header__logo-and-nav--nav-section {
+    width: 197px;
+    height: 70px;
+    border-radius: 35px;
+    padding: 12.5px 23.65px;
+  }
+
+  .header__logo-and-nav--nav-section img {
+    height: unset;
+  }
+
+  .header__logo-and-nav--nav-section p {
+    font-size: 20px;
+    line-height: 23.86px;
+  }
+
+  /* Hero section */
+  .hero-section h1 {
+    font-size: 128px;
+    font-weight: 800;
+    line-height: 164.22px;
+    margin-bottom: 63px;
+  }
+
+  .hero-section__image-container {
+    height: 400px;
+    position: static;
+  }
+
+  .hero-section__image-container--video {
+    width: 666.67px;
+    padding: 2.5rem 0 5rem 2.5rem;
+  }
+
+  .hero-section__image-container--video img {
+    width: 479px;
+  }
+
+  .audio-container {
+    right: 71px;
+  }
+
+  /* How it works section */
+  #how-it-works {
+    padding: 37px 49px;
+  }
+
+  .how-it-works-container h2 {
+    margin-bottom: 96px;
+  }
+
+  .how-it-works-container__steps-section ul {
+    gap: 104px;
+    justify-content: unset;
+  }
+
+  .how-it-works-container__steps-section li {
+    max-width: 261px;
+  }
+
+  .how-it-works-container__steps-section li h3 {
+    font-size: 40px;
+    line-height: 51.32px;
+  }
+
+  .how-it-works-container__steps-section li img {
+    width: unset;
+  }
+
+  .how-it-works-container__steps-section li p {
+    font-size: 24px;
+    line-height: 28.63px;
+  }
+
+  /* footer section */
+  .footer__copyright p {
+    font-size: 20px;
+    line-height: 23.86px;
+  }
+}

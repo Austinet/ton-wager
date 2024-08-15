@@ -1,0 +1,45 @@
+/* fonts */
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/HelveticaNeue-01.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Nike Futura ND';
+  src: url('../fonts/nike_futura_cn-xb.ttf') format('truetype');
+}
+
+/* variables */
+:root {
+  --white: #fff;
+  --orange: #ff9b00;
+  --orange-dark: #ff6800;
+  --grey-0: #d9d9d9;
+  --grey-1: #333333;
+  --blue: #1b63a1;
+  --helvetica: 'Helvetica Neue', Helvetica, sans-serif;
+  --nike-futura: 'Nike Futura ND', Arial, sans-serif;
+}
+
+/* resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  transition: all 0.3s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
