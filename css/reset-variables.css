@@ -9,6 +9,11 @@
   src: url('../fonts/nike_futura_cn-xb.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Bad Script';
+  src: url('../fonts/bad-script.regular.ttf') format('truetype');
+}
+
 /* variables */
 :root {
   --white: #fff;
@@ -26,7 +31,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* font-family: Arial, Helvetica, sans-serif; */
   transition: all 0.3s ease-in-out;
 }
 

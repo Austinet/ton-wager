@@ -90,6 +90,11 @@ p {
   right: 1.3rem;
   bottom: 1.5rem;
   z-index: 10;
+  cursor: pointer;
+}
+
+.audio-container:hover {
+  background: #333333d2;
 }
 
 .hero-section__image-container {
@@ -281,7 +286,7 @@ p {
   }
 
   .how-it-works-container__steps-section li img {
-    width: unset;
+    width: 200px;
   }
 
   .how-it-works-container__steps-section li p {
